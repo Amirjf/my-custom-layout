@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import Col from './components/Col';
+import Row from './components/Row';
+import './app.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Row>
+        <Col sm={12} col={6}>
+          <div className="item">col-6</div>
+        </Col>
+        <Col sm={12} col={6}>
+          <div className="item">col-6</div>
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={6} col={4}>
+          <div className="item">col-4</div>
+        </Col>
+        <Col sm={6} col={4}>
+          <div className="item">col-4</div>
+        </Col>
+        <Col sm={12} col={4}>
+          <div className="item">col-4</div>
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={6} col={3}>
+          <div className="item">col-3</div>
+        </Col>
+        <Col sm={6} col={3}>
+          <div className="item">col-3</div>
+        </Col>
+        <Col sm={6} col={3}>
+          <div className="item">col-3</div>
+        </Col>
+        <Col sm={6} col={3}>
+          <div className="item">col-3</div>
+        </Col>
+      </Row>
     </div>
   );
 }

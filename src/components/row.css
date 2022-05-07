@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 7rem; */
+  margin-right: calc(-0.5 * 2rem);
+  margin-left: calc(-0.5 * 2rem);
+}
+
+.row > * {
+  max-width: 100%;
+  margin-top: 5px;
+  padding-right: calc(2rem * 0.5);
+  padding-left: calc(2rem * 0.5);
+}
